@@ -1,5 +1,5 @@
 import { IUser } from '../interfaces/validateUser.interface'
-import { ok, unauthorized } from '../utils/httpHelpers'
+import { ok, badRequest } from '../utils/httpHelpers'
 import ValidationBuild from './validators/validation'
 
 export default class VerifyService {
@@ -8,7 +8,7 @@ export default class VerifyService {
 
     const result = ValidationBuild.validation(password)
 
-    if (result.length > 0) return unauthorized(result)
+    if (result.length > 0) return badRequest(result)
 
     return ok(result)
   }

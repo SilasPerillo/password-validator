@@ -8,8 +8,8 @@ export const ok = (data: string[]) => {
   }
 }
 
-export const unauthorized = (message: string[]) => ({
-  statusCode: 401,
+export const badRequest = (message: string[]) => ({
+  statusCode: 404,
   message: {
     verify: false,
     noMatch: message
