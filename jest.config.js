@@ -2,7 +2,7 @@
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
-  rootDir: './src/tests',
+  rootDir: './',
   testRegex: './*\\.test\\.ts$',
   testTimeout: 30000,
   maxWorkers: 1

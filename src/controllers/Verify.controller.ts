@@ -9,8 +9,6 @@ export default class VerifyController {
 
     const { statusCode, message } = await this.verifyService.validadeLogin(body)
 
-    console.log(statusCode, message)
-
     return res.status(statusCode).json(message)
   }
 }
