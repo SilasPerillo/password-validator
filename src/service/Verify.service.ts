@@ -10,6 +10,6 @@ export default class VerifyService {
 
     if (result.length > 0) return unauthorized(result)
 
-    return ok('ok')
+    return ok(result)
   }
 }

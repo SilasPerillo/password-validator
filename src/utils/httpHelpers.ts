@@ -1,9 +1,9 @@
-export const ok = (data: string) => {
+export const ok = (data: string[]) => {
   return {
     statusCode: 200,
     message: {
       verify: true,
-      match: data
+      noMatch: data
     }
   }
 }
