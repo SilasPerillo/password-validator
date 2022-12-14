@@ -8,15 +8,7 @@ export const ok = (data: string) => {
   }
 }
 
-export const badRequest = (message: string) => ({
-  statusCode: 400,
-  message: {
-    verify: false,
-    noMatch: message
-  }
-})
-
-export const unauthorized = (message: string) => ({
+export const unauthorized = (message: string[]) => ({
   statusCode: 401,
   message: {
     verify: false,

@@ -1,13 +1,14 @@
 import { IUser } from '../interfaces/validateUser.interface'
-import { badRequest, ok } from '../utils/httpHelpers'
+import { ok, unauthorized } from '../utils/httpHelpers'
+import ValidationBuild from './validators/validation'
 
 export default class VerifyService {
   async validadeLogin (body: IUser) {
-    const { user, password } = body
+    const { password } = body
 
-    console.log('body', body)
+    const result = ValidationBuild.validation(password)
 
-    if (!user || !password) return badRequest('User or password is required')
+    if (result.length > 0) return unauthorized(result)
 
     return ok('ok')
   }
