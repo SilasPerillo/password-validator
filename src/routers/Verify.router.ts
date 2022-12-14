@@ -5,6 +5,6 @@ const router = Router()
 
 const verifyController = new VerifyController()
 
-router.post('/', async (req, res) => (await verifyController.validadeLogin(req, res)))
+router.post('/', verifyController.validadeLogin)
 
 export default router
