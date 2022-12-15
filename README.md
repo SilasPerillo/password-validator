@@ -35,10 +35,8 @@ O projeto foi iniciado configurando o “package.json” com as ferramentas util
 
 Instale as dependências usando o comando:
 
-<aside>
-<img src="https://www.notion.so/icons/command-line_gray.svg" alt="https://www.notion.so/icons/command-line_gray.svg" width="40px" /> npm install
+`npm install`
 
-</aside>
 
 ## **App**
 
@@ -52,10 +50,10 @@ Utilizando a biblioteca nodemon para manter a aplicação rodando e atualizada.
 
 Para rodar o nodemon digite no terminal:
 
-<aside>
-<img src="https://www.notion.so/icons/command-line_gray.svg" alt="https://www.notion.so/icons/command-line_gray.svg" width="40px" /> *npm run dev*
 
-</aside>
+`npm run dev`
+
+
 
 ## **Rota**
 
@@ -120,46 +118,37 @@ Os testes cobrem a cobertura de integração desta aplicação.
 
 - Para rodar os testes digite no terminal:
 
-<aside>
-<img src="https://www.notion.so/icons/command-line_gray.svg" alt="https://www.notion.so/icons/command-line_gray.svg" width="40px" /> npm test
+`npm test`
 
-</aside>
 
 - Para rodar os testes com cobertura digite no terminal:
 
-<aside>
-<img src="https://www.notion.so/icons/command-line_gray.svg" alt="https://www.notion.so/icons/command-line_gray.svg" width="40px" /> npm run coverage
 
-</aside>
+`npm run coverage`
+
 
 ## **Docker**
 
 Esta aplicação está dockerizada e para rodar execute o script no terminal
 
-<aside>
-<img src="https://www.notion.so/icons/command-line_gray.svg" alt="https://www.notion.so/icons/command-line_gray.svg" width="40px" /> npm run docker
 
-</aside>
+`npm run docker`
+
 
 Ou pode rodar sem o script executando no terminal os comandos:
 
 - Na pasta raiz
 
-<aside>
-<img src="https://www.notion.so/icons/command-line_gray.svg" alt="https://www.notion.so/icons/command-line_gray.svg" width="40px" /> docker-compose up
+`docker-compose up -d`
 
-</aside>
 
 - depois
 
-<aside>
-<img src="https://www.notion.so/icons/command-line_gray.svg" alt="https://www.notion.so/icons/command-line_gray.svg" width="40px" /> docker exec -it password-validator bash
+`docker exec -it password-validator bash`
 
-</aside>
+
 
 Dentro do container instale as dependências usando
 
-<aside>
-<img src="https://www.notion.so/icons/command-line_gray.svg" alt="https://www.notion.so/icons/command-line_gray.svg" width="40px" /> npm install
+`npm install`
 
-</aside>
