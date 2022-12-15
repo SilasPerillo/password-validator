@@ -36,10 +36,9 @@ export default class ValidationBuild {
   }
 
   private static validationNoRepeted (password: string): boolean {
-    let count = 0
     for (let i = 0; i < password.length; i++) {
-      if (password[i] === password[i + 1]) count++
+      if (password[i] === password[i + 1]) return true
     }
-    return count > 0
+    return false
   }
 }
