@@ -25,14 +25,7 @@ export default class ValidationBuild {
 
   private static validationSpecialChars (password: string): number {
     const auxSpecialChars = '!@#$%^&*()-+\\/{}[]'
-    let countSpecialChars = 0 as number
-
-    for (let i = 0; i < password.length; i++) {
-      for (let j = 0; j < auxSpecialChars.length; j++) {
-        if (password[i] === auxSpecialChars[j]) countSpecialChars++
-      }
-    }
-    return countSpecialChars
+    return password.split('').filter((char) => auxSpecialChars.includes(char)).length
   }
 
   private static validationNoRepeted (password: string): boolean {
