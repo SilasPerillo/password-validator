@@ -27,7 +27,7 @@ E o Controller fica responsável de receber os dados da requisição e repassar 
 
 Imagem referente a estrutura de pastas e arquivos utilizando a metodologia MSC:
 
-![Untitled](Documentac%CC%A7a%CC%83o%20ded384ea31734c689dbbaba84960b088/Untitled.png)
+![Img arquitetura](assets/img-arquitetura.png)
 
 ## **Primeiro passo**
 
